@@ -6,6 +6,7 @@ import {
   Maximize2, Minimize2
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { Analytics } from '@vercel/analytics/react';
 
 import { ThreeGlobeNetwork } from "./components/ThreeGlobeNetwork";
 import { FeatureCardGrid } from "./components/FeatureCardGrid";
@@ -820,6 +821,7 @@ export default function App() {
 
       </AnimatePresence>
 
+      <Analytics />
     </div>
   );
 }
