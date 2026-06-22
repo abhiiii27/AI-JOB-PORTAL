@@ -1,0 +1,6 @@
+{
+  "name": "AI Job Portal ",
+  "description": "A stunning 3D animated AI-powered job portal website designed with Three.js interactive neural networks, custom glassmorphism micro-interactions, responsive card matching, and real-time server-side Gemini resume vector scan analytics and dialogue simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

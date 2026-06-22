@@ -1,0 +1,157 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-space-bg: #050A14;
+  --color-electric-blue: #00D4FF;
+  --color-neon-violet: #7B2FFF;
+  --color-cyan-glow: #00FFD1;
+  --color-text-muted: #8892A4;
+  
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: #050A14 !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Glassmorphic card styling with border gradients */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 212, 255, 0.05);
+}
+
+/* Custom gorgeous glowing dot cursor */
+.custom-cursor {
+  width: 8px;
+  height: 8px;
+  background: #00FFD1;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #00FFD1, 0 0 20px #00D4FF;
+  transition: width 0.1s, height 0.1s, background-color 0.1s;
+}
+
+.custom-cursor-glow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 212, 255, 0.5);
+  background: rgba(0, 212, 255, 0.03);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.08s ease-out;
+}
+
+@media (max-width: 768px) {
+  .custom-cursor, .custom-cursor-glow {
+    display: none !important;
+  }
+}
+
+/* Scrollbar styling for futuristic feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050A14;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 47, 255, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 212, 255, 0.5);
+}
+
+/* Typewriter cursor effect */
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: #00FFD1;
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+/* Glowing text and buttons */
+.text-glow-electric {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+.text-glow-neon {
+  text-shadow: 0 0 10px rgba(123, 47, 255, 0.5);
+}
+
+.btn-glow-cyan {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+.btn-glow-cyan::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #00D4FF, #7B2FFF);
+  opacity: 0.8;
+  z-index: -1;
+  transition: all 0.3s ease;
+  filter: blur(6px);
+}
+.btn-glow-cyan:hover::before {
+  opacity: 1;
+  filter: blur(12px);
+}
+
+/* Grid animation element */
+.grid-mesh {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+}
+
+/* Shimmer animation for card button */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-btn {
+  background: linear-gradient(120deg, rgba(0,212,255,0.15) 30%, rgba(255,255,255,0.3) 40%, rgba(0,212,255,0.15) 50%);
+  background-size: 200% auto;
+  animation: shimmer 4s infinite linear;
+}
