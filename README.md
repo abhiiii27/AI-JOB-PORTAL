@@ -30,6 +30,12 @@
   <a href="#-license">License</a>
 </p>
 
+<p align="center">
+  <a href="https://ai-job-portal-iota.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-ai--job--portal--iota.vercel.app-00FFD1?style=for-the-badge&logoColor=white" alt="Live Demo" />
+  </a>
+</p>
+
 ---
 
 ## ✨ Features
