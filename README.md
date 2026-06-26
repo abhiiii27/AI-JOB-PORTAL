@@ -5,6 +5,11 @@
   <img src="https://img.shields.io/badge/Three.js-0.184-000000?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/Gemini_AI-API-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini AI" />
+  <img src="https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
+
+<p align="center">
+  <img src="https://vercelbadge.vercel.app/api/abhiiii27/AI-JOB-PORTAL" alt="Vercel Deployment Status" />
 </p>
 
 <h1 align="center">🌌 AI Job Portal</h1>
@@ -15,6 +20,7 @@
 </p>
 
 <p align="center">
+  <a href="https://ai-job-portal-iota.vercel.app" target="_blank">🌐 <strong>Live Demo</strong></a> •
   <a href="#-features">Features</a> •
   <a href="#-tech-stack">Tech Stack</a> •
   <a href="#-getting-started">Getting Started</a> •
